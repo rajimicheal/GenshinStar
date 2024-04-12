@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshinster - Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<style>
+            /* Custom CSS styles */
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4267b2;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="color"] {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+<body>
+    <header>
+        <h1>Genshinster</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Profile</a>
+        <a href="messages.html">Messages</a>
+    </nav>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="profilepic.jpeg" alt="Profile Picture" class="profile-picture">
+            <h1 class="username">Traveler</h1>
+            <p class="bio" id="bio">Adventurer from Mondstadt</p>
+            <button onclick="updateBio()">Update Bio</button>
+        </div>
+        <div class="profile-stats">
+            <div class="stat">
+                <span class="stat-label">Followers:</span>
+                <span class="stat-value">1000</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Following:</span>
+                <span class="stat-value">500</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Posts:</span>
+                <span class="stat-value">50</span>
+            </div>
+        </div>
+        <div class="recent-posts">
+            <h2>Recent Posts</h2>
+            <ul id="post-list">
+                <li>No recent posts.</li>
+            </ul>
+        </div>
+        <div class="favorite-characters">
+            <h2>Favorite Characters</h2>
+            <ul>
+                <li>Diluc</li>
+                <li>Venti</li>
+                <li>Keqing</li>
+            </ul>
+        </div>
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Adventurer Rank 50</li>
+                <li>Dragonspine Explorer</li>
+                <li>Stormterror Slayer</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <img src="image1.jpeg" alt="Image 1">
+                <img src="image2.jpeg" alt="Image 2">
+                <img src="image3.jpeg" alt="Image 3">
+            </div>
+        </div>
+        <div class="friends">
+            <h2>Friends</h2>
+            <ul>
+                <li>Friend 1</li>
+                <li>Friend 2</li>
+                <li>Friend 3</li>
+            </ul>
+        </div>
+        <div class="activity-feed">
+            <h2>Activity Feed</h2>
+            <ul id="activity-list">
+                <li>No activity yet.</li>
+            </ul>
+        </div>
+        <div class="user-settings">
+            <h2>User Settings</h2>
+            <!-- Add user settings here -->
+        </div>
+        <div class="comments">
+            <h2>Comments</h2>
+            <ul id="comments-list">
+                <li>No comments yet.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Genshinster. All rights reserved.
+    </footer>
+    <script>
+        function updateBio() {
+            var newBio = prompt("Enter your new bio:");
+            if (newBio !== null) {
+                document.getElementById("bio").textContent = newBio;
+            }
+        }
+    </script>
+</body>
+</html>

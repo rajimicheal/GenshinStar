@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshinster - Messages</title>
+    <link rel="stylesheet" href="messges.css">
+</head>
+<style>
+    /* Styles for the Messages page */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+#message-list {
+    margin-top: 20px;
+}
+
+.message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message div {
+    margin-bottom: 5px;
+}
+
+#new-message-form {
+    margin-top: 20px;
+}
+
+#new-message-form input[type="text"],
+#new-message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#new-message-form button {
+    padding: 10px 20px;
+    background-color: #4267b2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#new-message-form button:hover {
+    background-color: #405d9b;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4267b2;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="color"] {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+<body>
+    <header>
+        <h1>Genshinster</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Messages</h2>
+        <!-- Message List -->
+        <div id="message-list">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <!-- New Message Form -->
+        <form id="new-message-form">
+            <input type="text" id="recipient" placeholder="Recipient">
+            <textarea id="message-text" placeholder="Type your message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Genshinster. All rights reserved.
+    </footer>
+    <script src="messages.js"></script>
+</body>
+</html>
