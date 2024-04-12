@@ -1,0 +1,2 @@
+# GenshinStar
+v1
